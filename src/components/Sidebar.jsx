@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 const Sidebar = () => {
   return (
-    <div className='bg-white h-full relative  p-5'>
+    <div className='bg-white h-full shadow  p-5'>
       <img src={assets.logo} alt="" />
 
       <div className='mt-10 space-y-5'>
@@ -61,25 +61,25 @@ const Sidebar = () => {
         <div className='pl-5 pr-2 py-2 flex justify-between items-center'>
        <div className='flex items-center gap-3'>
          <img src={assets.credit} alt="" />
-        <p className='text-[14px]'>Kanban Board</p>
+        <p className='xl:text-[14px] text-[12px]'>Kanban Board</p>
        </div>
-       <p className='text-[14px]'>24</p>
-       </div>
-
-        <div className='pl-5 pr-2 py-2 flex justify-between items-center'>
-       <div className='flex items-center gap-3'>
-         <img src={assets.credit} alt="" />
-        <p className='text-[14px]'>Design</p>
-       </div>
-       <p className='text-[14px]'>24</p>
+       <p className='xl:text-[14px] text-[12px]'>24</p>
        </div>
 
         <div className='pl-5 pr-2 py-2 flex justify-between items-center'>
        <div className='flex items-center gap-3'>
          <img src={assets.credit} alt="" />
-        <p className='text-[14px]'>Development</p>
+        <p className='xl:text-[14px] text-[12px]'>Design</p>
        </div>
-       <p className='text-[14px]'>24</p>
+       <p className='xl:text-[14px] text-[12px]'>24</p>
+       </div>
+
+        <div className='pl-5 pr-2 py-2 flex justify-between items-center'>
+       <div className='flex items-center gap-2'>
+         <img src={assets.credit} alt="" />
+        <p className='xl:text-[14px] text-[12px]'>Development</p>
+       </div>
+       <p className='xl:text-[14px] text-[12px]'>24</p>
        </div>
 
 

@@ -19,7 +19,7 @@ const Navbar = () => {
         
         <img className='w-[20px]' src={assets.plus_circle} alt="" />
         <img src={assets.bell} alt="" />
-         <img src={assets.search} alt="" />
+         <img className='lg:hidden block' src={assets.search} alt="" />
         <img src={assets.chart_pie} alt="" />
         <div onClick={() => setIsMenuOpen(true)} className='block lg:hidden'>
           <img className='w-[25px]' src="https://cdn-icons-png.freepik.com/256/11693/11693720.png?ga=GA1.1.2728068.1744452084&semt=ais_hybrid" alt="" />

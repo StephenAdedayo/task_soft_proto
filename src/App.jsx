@@ -7,9 +7,9 @@ import Calendar from './components/Calendar'
 const App = () => {
   return (
     <>
-      <main className='flex'>
+      <main className='flex overflow-hidden'>
 
-       <div className='flex-[20%]  hidden lg:block '>
+       <div className='flex-[20%] sticky top-0 hidden lg:block '>
         <Sidebar />
        </div>
      
@@ -17,11 +17,11 @@ const App = () => {
        <Navbar />
 
        <div className='bg-[#F9FCFE] h-full p-5 flex flex-col gap-10 lg:flex-row'>
-        <div className='flex-[55%]'>
+        <div className='lg:flex-[55%]'>
         <Tasks />
         </div>
 
-        <div className='flex-[45%]'>
+        <div className='lg:flex-[45%]'>
           <Calendar />
         </div>
        
