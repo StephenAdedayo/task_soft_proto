@@ -13,7 +13,7 @@ const Productivity = () => {
   return (
     <div className='w-full'>
 
-        <div className='grid grid-cols-2 gap-10'>
+        <div className='grid xl:grid-cols-2 lg:grid-cols-1 sm:grid-cols-2 grid-cols-1 gap-10'>
          {tivits.map((tivit, index) => (
             <div className='bg-white rounded-lg p-5 flex items-center shadow justify-between'>
                  <div className='flex flex-col gap-2'>

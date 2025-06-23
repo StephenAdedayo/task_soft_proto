@@ -17,7 +17,7 @@ const Date = () => {
         <p className='text-[20px] font-medium'>Monday, 26 June 2023</p>
       </div>
 
-      <div className='mt-5 grid grid-cols-7 gap-2 '>
+      <div className='mt-5 grid 2xl:grid-cols-7 xl:grid-cols-5 md:grid-cols-4 grid-cols-3 gap-2 '>
          {mock.map((moc, index) => (
             <div className={`${moc.day === "Mon" ? "bg-[#105EF5] text-white" : moc.day.includes('S') ? 'text-[#b4b4b4] border border-[#b4b4b4] ' : " border-[#105EF5] border " } p-3 rounded-lg grid place-items-center`}>
                 <p>{moc.day}</p>

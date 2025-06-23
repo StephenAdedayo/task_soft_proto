@@ -12,7 +12,7 @@ const AddTask = () => {
             <p className='text-[#105EF5] underline font-medium'>See all</p>
         </div>
 
-      <div className='mt-8 grid grid-cols-3 gap-5'>
+      <div className='mt-8 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5'>
           {projects.map((project, index) => (
             <div className='rounded-lg shadow'>
                 <img className='w-full rounded-lg' src={project.img} alt="" />
@@ -21,15 +21,15 @@ const AddTask = () => {
                   <p className='text-[14px]'>{project.name}</p>
                   <p className='text-[10px]'>{project.detail}</p>
                   <div className='flex items-center justify-between'>
-                    <p className='px-4 py-2 border border-[#105EF5] text-[#105EF5] rounded-lg'>View all</p>
-                    <img className='w-[50px]' src={assets.avatar} alt="" />
+                    <p className='px-4 py-2 border border-[#105EF5] text-[14px] text-[#105EF5] rounded-lg'>View all</p>
+                    <img className='w-[30px]' src={assets.avatar} alt="" />
                   </div>
                 </div>
             </div>
           ))}
-           <div className='rounded-lg shadow bg-[#E3F5FF] gap-2 flex flex-col justify-center items-center'>
+           <div className='rounded-lg shadow bg-[#E3F5FF] gap-2 p-2 flex w-full h-full flex-col justify-center items-center'>
                    <p className='text-[34px] text-[#105EF5]'>+</p>
-                   <p className='text-[#105EF5]'>Create new project</p>
+                   <p className='text-[#105EF5] text-center'>Create new project</p>
            </div>
       </div>
 
