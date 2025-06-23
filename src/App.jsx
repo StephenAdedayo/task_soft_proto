@@ -9,7 +9,7 @@ const App = () => {
     <>
       <main className='flex'>
 
-       <div className='flex-[20%] hidden lg:block '>
+       <div className='flex-[20%]  hidden lg:block '>
         <Sidebar />
        </div>
      
