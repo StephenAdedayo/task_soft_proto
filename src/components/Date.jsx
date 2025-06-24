@@ -20,13 +20,14 @@ const Date = () => {
       <div className='mt-5 grid 2xl:grid-cols-7 xl:grid-cols-5 md:grid-cols-4 grid-cols-3 gap-2 '>
          {mock.map((moc, index) => (
             <div className={`${moc.day === "Mon" ? "bg-[#105EF5] text-white" : moc.day.includes('S') ? 'text-[#b4b4b4] border border-[#b4b4b4] ' : " border-[#105EF5] border " } p-3 rounded-lg grid place-items-center`}>
-                <p>{moc.day}</p>
+                <p >{moc.day}</p>
                 <p>{moc.date}</p>
             </div>
          ))}
       </div>
-    <div className='mt-5'>
+    <div className='mt-5 relative'>
         <List />
+          <div className='absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#F9FCFE] to-transparent pointer-events-none' />
 
     </div>
 

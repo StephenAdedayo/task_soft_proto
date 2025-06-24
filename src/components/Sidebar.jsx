@@ -3,8 +3,17 @@ import { assets } from '../assets/assets'
 
 const Sidebar = () => {
   return (
-    <div className='bg-white h-full shadow  p-5'>
-      <img src={assets.logo} alt="" />
+    <div className='bg-white h-full shadow  p-5 relative'>
+      <div className='flex justify-between items-center'>
+                  <img src={assets.logo} alt="" />
+
+
+        <div className='flex items-center lg:hidden gap-3'>
+         <img className='w-[20px]' src={assets.plus_circle} alt="" />
+           <img className='w-[20px]' src={assets.search} alt="" />
+        <img className=' w-[20px]' src={'https://cdn-icons-png.freepik.com/256/11047/11047140.png?ga=GA1.1.2728068.1744452084&semt=ais_hybrid'} alt="" />      
+        </div>
+      </div>
 
       <div className='mt-10 space-y-5'>
 
@@ -41,6 +50,8 @@ const Sidebar = () => {
        </div>
 
       </div>
+
+
 
 
       <div className='mt-14'>

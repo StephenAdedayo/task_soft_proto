@@ -8,8 +8,12 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='p-5 bg-white shadow flex justify-between items-center'>
+    <div className='p-5 bg-white shadow flex justify-between items-center relative '>
       <p className='font-medium'>Home</p>
+
+      <div className='w-18 h-1 bg-[#105EF5] absolute bottom-0 left-2.5'>
+
+      </div>
 
       <div className='flex items-center gap-5'>
         <div className='p-1 rounded-full border hidden  border-[#1b1b1b] lg:flex items-center gap-3'>
@@ -17,10 +21,11 @@ const Navbar = () => {
           <input type="text" className='flex-1 outline-none' placeholder='Search'/>
         </div>
         
-        <img className='w-[20px]' src={assets.plus_circle} alt="" />
-        <img src={assets.bell} alt="" />
-         <img className='lg:hidden block' src={assets.search} alt="" />
-        <img src={assets.chart_pie} alt="" />
+        <img className='w-[20px] hidden lg:block' src={assets.plus_circle} alt="" />
+                  <img src={assets.bell} alt="" />
+        
+         <img className='hidden' src={assets.search} alt="" />
+        <img className=' w-[20px] lg:block hidden' src={'https://cdn-icons-png.freepik.com/256/11047/11047140.png?ga=GA1.1.2728068.1744452084&semt=ais_hybrid'} alt="" />
         <div onClick={() => setIsMenuOpen(true)} className='block lg:hidden'>
           <img className='w-[25px]' src="https://cdn-icons-png.freepik.com/256/11693/11693720.png?ga=GA1.1.2728068.1744452084&semt=ais_hybrid" alt="" />
         </div>
